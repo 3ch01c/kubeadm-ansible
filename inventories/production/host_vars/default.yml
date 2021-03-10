@@ -1,0 +1,5 @@
+---
+ansible_host: 10.0.1.25
+ansible_user: ubuntu
+arch: amd64
+codename: focal

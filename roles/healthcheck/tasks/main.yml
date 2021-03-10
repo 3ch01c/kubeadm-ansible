@@ -20,7 +20,7 @@
   tags: healthcheck
 
 - name: "Install Healthcheck"
-  shell: "kubectl apply -f {{ tmp_dir }}/healthcheck/kubernetes/"
+  shell: "kubectl --kubeconfig={{ kubeadmin_config }} apply -f {{ tmp_dir }}/healthcheck/kubernetes/"
   tags: healthcheck
 
 - name: "Clean-up"
